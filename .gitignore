@@ -1,4 +1,4 @@
-node_modules
 !node_modules\bigchaindb-driver\dist\node\Ed25519Keypair.js
+node_modules
 ecosystem.config.js
 pm2.json
