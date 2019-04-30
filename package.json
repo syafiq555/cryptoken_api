@@ -4,7 +4,7 @@
   "description": "",
   "main": "src/main.js",
   "scripts": {
-    "start": "node -r esm src/main.js",
+    "start": "node src/main.js",
     "dev": "nodemon -r esm src/main.js",
     "build": "pm2 start src\\main.js --node-args='-r esm'"
   },
