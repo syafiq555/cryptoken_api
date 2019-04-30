@@ -1,0 +1,30 @@
+{
+  "name": "testbdb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "node -r esm src/main.js",
+    "dev": "nodemon -r esm src/main.js",
+    "build": "pm2 start src\\main.js --node-args='-r esm'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "bcrypt": "^3.0.6",
+    "bcryptjs": "^2.4.3",
+    "bigchaindb-driver": "^4.1.0",
+    "bip39": "^3.0.1",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "dotenv": "^7.0.0",
+    "esm": "^3.2.22",
+    "express": "^4.16.4",
+    "mysql": "^2.16.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.11"
+  }
+}
