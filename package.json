@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "src/main.js",
+  "engines": {
+    "node": "8.9.1"
+  },
   "scripts": {
     "start": "node src/main.js",
     "dev": "nodemon -r esm src/main.js",
