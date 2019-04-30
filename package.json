@@ -8,8 +8,7 @@
   },
   "scripts": {
     "start": "node src/main.js",
-    "dev": "nodemon -r esm src/main.js",
-    "build": "pm2 start src\\main.js --node-args='-r esm'"
+    "dev": "nodemon -r esm src/main.js"
   },
   "keywords": [],
   "author": "",
