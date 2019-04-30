@@ -1,17 +1,25 @@
 const Cryptoken = require('./classes/Cryptoken')
 const express = require('express')
-const cors = require('cors')
+// const cors = require('cors')
 const axios = require('axios')
-
+var cors_proxy = require('cors-anywhere');
 const bodyParser = require('body-parser')
-
 // init server
 const app = express()
-
+const host = process.env.HOST || 'https://cryptoken.herokuapp.com/';
+const port = process.env.PORT || 8080;
 //server middleware
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json())
-app.use(cors())
+// app.use(cors())
+
+cors_proxy.createServer({
+  originWhitelist: [], // Allow all origins
+  requireHeader: ['origin', 'x-requested-with'],
+  removeHeaders: ['cookie', 'cookie2']
+}).listen(port, host, () => console.log('Running CORS Anywhere on ' + host + ':' + port))
+
+
 
 app.get('/', async (req, res) => {
   return res.json({ 'message': 'Welcome to Cryptoken' })
@@ -293,7 +301,7 @@ const handleErrors = (error, res) => {
 
 
 
-app.listen(process.env.PORT || 222, () => console.log('listening on heroku'))
+// app.listen(process.env.PORT || 222, () => console.log('listening on heroku'))
 
 // bcrypt.hash('BHVu2ijRffPULWr3BSfpD1PpQ8mFFtUxZLZXe2Qn8d32', 10, function (err, hash) {
 //   // Store hash in your password DB.
