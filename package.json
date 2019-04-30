@@ -18,7 +18,7 @@
     "axios": "^0.18.0",
     "bcrypt": "^3.0.6",
     "bcryptjs": "^2.4.3",
-    "bigchaindb-driver": "git+ssh://github.com/syafiq555/js-bigchaindb-driver.git",
+    "bigchaindb-driver": "^4.1.1",
     "bip39": "^3.0.1",
     "body-parser": "^1.18.3",
     "cors": "^2.8.5",
