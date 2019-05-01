@@ -1,5 +1,5 @@
 // Require dependencies.
-const driver = require('bigchaindb-driver');
+const driver = require('bigchaindb-js-driver');
 const bip39 = require('bip39')
 const axios = require('axios')
 const bcrypt = require('bcryptjs')
