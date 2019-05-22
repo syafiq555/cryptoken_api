@@ -1,4 +1,4 @@
-# car-rental-system
+# cryptoken_api
 1. Clone this repository with
 ```
 git clone https://github.com/syafiq555/cryptoken_api.git
@@ -6,7 +6,7 @@ git clone https://github.com/syafiq555/cryptoken_api.git
 
 2. Run in cmd/terminal
 ```
-cd car-rental-system
+cd cryptoken_api
 cp .env.sample .env
 ```
 4. Change the newly created .env file according to your local database configuration
